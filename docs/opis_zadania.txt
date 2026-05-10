@@ -1,0 +1,9 @@
+1. Pobierz wskazany zbiór danych tabelarycznych z Kaggle, np. Medical Information Dataset, i opisz krótko jego strukturę: główne encje, pola oraz potencjalne problemy jakości danych.
+2. Zaproponuj krótki proces zarządzania jakością danych medycznych dla tego zbioru: wykrywanie błędów, klasyfikacja problemów, korekty, walidacja i raportowanie.
+3. Wskaż 3 mierniki jakości danych, które najlepiej pasują do tego zbioru, np. kompletność, spójność i unikalność, oraz opisz sposób ich liczenia.
+4. Zaprojektuj i utwórz przykładową relacyjną bazę danych, np. w PostgreSQL, obejmującą podstawowe tabele pacjentów, wizyt, leków i badań.
+5. Załaduj dane do bazy i wykonaj podstawowy preprocessing jakościowy: usunięcie duplikatów, standaryzację wartości, obsługę braków danych i walidację kluczowych pól.
+6. Pobierz dodatkowy zbiór obrazów CT z Kaggle i przygotuj techniczne, testowe powiązanie obrazów z rekordami pacjentów, jasno zaznaczając, że jest to mapowanie sztuczne na potrzeby zadania.
+7. Zaproponuj sposób przechowywania obrazów CT w architekturze typu Data Lakehouse: pliki w storage obiektowym oraz metadane i referencje do plików w warstwie bazodanowej.
+8. Przygotuj 2–3 przykładowe raporty lub prosty dashboard pokazujący jakość danych, liczbę rekordów, rozkład braków danych i powiązania danych pacjentów z badaniami CT.
+9. Pokaż przykładowe zapytanie, które wyszukuje badania CT pacjentów przyjmujących wskazany lek, np. lek „XXX”, na podstawie danych w bazie i referencji do obrazów.

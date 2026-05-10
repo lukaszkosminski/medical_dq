@@ -1,0 +1,82 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Docker / local environment
+# =========================
+.env
+*.log
+docker-compose.override.yml
+
+# =========================
+# Data directory
+# Ignore all input/output data files
+# =========================
+data/*
+data/raw/*
+data/raw/ct/*
+data/processed/*
+
+# Keep directory structure in Git
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/raw/ct/.gitkeep
+!data/processed/.gitkeep
+
+# =========================
+# Large source / medical files
+# =========================
+*.xlsx
+*.xls
+*.csv
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.gz
+*.npz
+
+# CT / image files
+*.dcm
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# =========================
+# Database / local artifacts
+# =========================
+*.db
+*.duckdb
+*.sqlite
+*.sqlite3
+postgres_data/
+minio_data/
+
+# =========================
+# OS / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# =========================
+# Keep reports if they are small
+# =========================
+# reports/*.csv are allowed intentionally
+# docs/*.pdf and docs/*.docx are allowed intentionally
