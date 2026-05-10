@@ -49,11 +49,11 @@ DuckDB nie jest wymagany, jeśli plik `MID.xlsx` został już przekonwertowany d
 ├── dashboard/
 │   └── streamlit_app.py
 ├── reports/
-│   └── completeness_metrics.csv
-│   └── ct_mapping_summary.csv
-│   └── data_quality_issues_summary.csv
-│   └── html_like_text_issues.csv
-│   └── record_counts.csv
+│   ├── completeness_metrics.csv
+│   ├── ct_mapping_summary.csv
+│   ├── data_quality_issues_summary.csv
+│   ├── html_like_text_issues.csv
+│   ├── record_counts.csv
 │   └── streamlit_report.pdf
 ├── sql/
 │   ├── 01_schema.sql
@@ -175,7 +175,7 @@ docker exec medical_dq_postgres psql -U postgres -d medical_dq -f /tmp/04_report
 
 ## Zapytanie końcowe: lek -> CT
 
-Przykładowe zapytanie znajduje się w raporcie i dashboardzie. Logika:
+Przykładowe zapytanie znajduje się w pliku z odpowiedziami w folderze `Doc` i dashboardzie. Logika:
 
 ```text
 patients -> patient_medications -> medications -> exams -> ct_images
