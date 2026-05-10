@@ -24,10 +24,7 @@ docker-compose.override.yml
 # Data directory
 # Ignore all input/output data files
 # =========================
-data/*
-data/raw/*
-data/raw/ct/*
-data/processed/*
+data/**
 
 # Keep directory structure in Git
 !data/.gitkeep
@@ -75,8 +72,6 @@ Thumbs.db
 .idea/
 .vscode/
 
-# =========================
-# Keep reports if they are small
-# =========================
-# reports/*.csv are allowed intentionally
-# docs/*.pdf and docs/*.docx are allowed intentionally
+# Allow lightweight generated report exports
+!reports/
+!reports/*.csv
