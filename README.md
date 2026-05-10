@@ -175,7 +175,7 @@ docker exec medical_dq_postgres psql -U postgres -d medical_dq -f /tmp/04_report
 
 ## Zapytanie końcowe: lek -> CT
 
-Przykładowe zapytanie znajduje się w pliku z odpowiedziami w folderze `Doc` i dashboardzie. Logika:
+Przykładowe zapytanie znajduje się w pliku z odpowiedziami w folderze `docs` i dashboardzie. Logika:
 
 ```text
 patients -> patient_medications -> medications -> exams -> ct_images
